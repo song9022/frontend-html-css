@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 태그 복습</title>
+</head>
+<body>
+  <!-- 
+    시맨틱 태그 header, main, footer
+    
+    header태그 : h1태그, nav태그(5개의 a태그)
+    main태그 : 6개의 section
+    section01 : img 3개 (practice폴더 내에 imges 폴더)
+    section02 : About Us (h2, p태그)
+    section03 : Misson Statment (h2, p태그)
+    section04 : Services (h2, 순서가 있는 태그)
+    section05 : Our Team (h2, 순서가 없는 태그)
+    section06 : Contact Us (h2, p, a태그)
+
+    footer태그 : p, a태그
+
+    verticle 바 : Shift + \(역슬래시)
+    -->
+
+<header>
+  <h1>웹 프론트엔드의 시작</h1>
+
+  <nav>
+    <!-- a태그 수신처에 #입력 시 웹 문서 그대로를 사용 -->
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Service</a> |
+    <a href="#">Team</a> |
+    <a href="#">Caontact</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <img src="images/animal-6871771_1280.jpg" alt="툐1" width="150">
+    <img src="images/animal-6871771_1280.jpg" alt="툐2" width="150">
+    <img src="images/animal-6871771_1280.jpg" alt="툐3" width="150">
+  </section>
+
+  <section>
+    <h2>About us</h2>
+    <p>뭐라고 적은지 몰겟어요 영어 자제점</p>
+  </section>
+
+  <section>
+    <h2>Misson Statment</h2>
+    <p>어쩌구 저쩌구 적음</p>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <ol type="A">
+      <li>Services1</li>
+      <li>Services2</li>
+      <li>Services3</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Our Team</h2>
+    <ul>
+      <li>
+        <img src="images/animal-6871771_1280.jpg" alt="툐4" width="100">
+          Name1</li>
+      <li>
+        <img src="images/animal-6871771_1280.jpg" alt="툐4" width="100">
+          Name2</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>주소 : 주소적음</p>
+    <p>전화번호 : (123) 456-7890 </p>
+    <p>이메일 : <a href="mailto:asdasd@fdfdd.com">이메일적어</a></p>
+  </section>
+</main>
+
+<footer>
+  <!-- &: 앰퍼샌드 -->
+  <p>&copy; 어쩌구 저쩌구 컴퍼니 네임</p>
+  <p><a href="#">페이스북</a> | <a href="#">트위터</a></p>
+</footer>
+
+</body>
+</html>
