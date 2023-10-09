@@ -1,0 +1,16 @@
+p {
+  color: blue;
+}
+
+#important {
+
+}
+
+h2 {
+  text-decoration: initial;
+}
+
+/*클래스가 notic인 <p>태그만*/
+p.notic {
+  color: purple;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연결 선택자 예제 실습</title>
+  <!-- css파일 연결
+    동시 선택자 (h1 h2 색상을 green)
+    하위 선택자 (article 태그 아래의 p태그에 blue)
+    자식 선택자 (ul 아래의 li에 list-style: square)
+    인접 형제 선택자 (들여쓰기 : txet-indent:20px)
+    일반 형제 선택자 (글자 기울임체 : font-style: italic;)
+  -->
+  <link rel="stylesheet" href="../1005/styles/b_practice01.css">
+</head>
+<body>
+  <!-- 
+    h1
+    article(h2, p, p, ul, li*3)
+    p
+  -->
+
+  <h1>Welcome</h1>
+  <article>
+    <h2>Section Title</h2>
+    <p>뭐라고 쓰인거 같은데</p>
+    <p>잘 보이지가 않습니다</p>
+
+    <ul>
+      <li>아이템 1</li>
+      <li>아이템 2</li>
+      <li>아이템 3</li>
+      </ul>
+    </article>
+
+  <p>글씨가 잘 안보여용</p>
+</body>
+</html>
