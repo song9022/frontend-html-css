@@ -1,0 +1,20 @@
+/* ul {
+  list-style-type: square;
+  list-style-position: inside;
+} */
+
+ul {
+  list-style: square inside;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+.ul-image {
+  list-style-image: url();
+}
+
+.ul-posistion {
+  list-style-position: inside
+}
