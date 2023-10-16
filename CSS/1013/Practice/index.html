@@ -40,28 +40,36 @@
   </header>
 
   <nav>
-    <a href="">Section 1</a>
-    <a href="">Section 2</a>
+    <ul>
+      <li><a href="#">Section 1</a></li>
+      <li><a href="#">Section 2</a></li>
+    </ul>
   </nav>
 
   <main>
-<!-- Section 1 -->
+    <!-- Section 1 -->
     <div class="Section1">
-    <section>
-      <p><strong>Section 1</strong></p>
-      <header>Section 1</header>
-      <header>Section 1</header>
-      <div>
-        <form>
-          <tr>ㅇㅇ</tr>
-        </form>
-      </div>
-    </section>
+      <section>
+        <h5>Section 1</h5>
+          <!-- 헤더 및 표 -->
+          <table>
+            <th>Header 1</th>
+            <th>Header 2</th>
+              <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+              </tr>
+          </table>
+
+          <!-- 링크 이미지 -->
+          <a href="#"><img src="../../../images/images-folder.jpg" alt="이미지1" width="150" height="150" /></a>
+      </section>
     </div>
 
 <!-- Section 2 -->
     <section>
-
+      <h5>Section 2</h5>
+      <img src="practice.jpg" alt="이미지2">
       <div>
         <form>
           <!-- ▼ 그룹 만들기 -->
@@ -69,27 +77,31 @@
             <!-- ▼ 그룹의 설명을 제공 -->
             <legend>Personal Information</legend>
 
-            <div class="name">
+            <div class="label">
               <label for="name">Name: </label> <br />
-              <input type="name" autofocus required /> <br />
+              <input type="name" id="input" autofocus required /> <br />
             </div>
 
-            <label for="password">Password: </label> <br />
-            <input type="password" required /> <br />
-  
-            <label for="email">Email: </label> <br />
-            <input type="email" /> <br />
+            <div class="label">
+              <label for="password">Password: </label> <br />
+              <input type="password" id="input" required /> <br />
+            </div>
 
-            <label for="">Do you like this form?</label> <br />
+            <div class="label">
+              <label for="email">Email: </label> <br />
+              <input type="email" id="input" /> <br />
+            </div>
+
+            <label for="check">Do you like this form?</label> <br />
             <!-- 둘 중 하나를 선택 : 관련 있는 그룹끼리는 같은 name 속성값을 지정해야 한다. -->
-            <input type="radio" name="like">Yes<br />
-            <input type="radio" name="like">No<br />
+            <input type="radio" name="like" />Yes<br />
+            <input type="radio" name="like" />No<br />
 
 
-            <label for="">Comments</label> <br />
-            <input type="text"><br />
+            <label for="comments">Comments</label> <br />
+            <input type="text" id="input" /><br />
   
-            <input type="submit" value="Submit" />
+            <input type="submit" id="submit" value="Submit" />
           </fieldset>
         </form>
       </div>
