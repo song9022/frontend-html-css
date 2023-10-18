@@ -1,0 +1,14 @@
+.container {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+.container {
+  display: grid;
+  /* 200px 10개 */
+  /* grid-template-columns: 200px 200px 200px; */
+
+  grid-template-columns: 1fr 2fr 1fr 100px;
+}
