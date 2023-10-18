@@ -3,25 +3,374 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>서울대학교병원 클론코딩-Home</title>
+  <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
 <!-- 헤더 영역 -->
-  <div>
-    <header></header>
+  <div class="header">
+    <!-- 헤더 내부 요소 -->
+    <div class="header-inner">
+      <!-- 서울대병원 로고 -->
+      <a href="https://www.snuh.org/main.do" class="logo">
+        <h1 class="blind">서울대학교병원</h1>
+      </a>
+
+      <!-- 커스텀북 로고 -->
+      <a href="https://dept.snuh.org/dept/OC/index.do" class="Qbook">
+        <p>Outcomes Book</p>
+      </a>
+
+      <!-- 로그인/회원가입/언어 -->
+      <div class="sign-in-wrapper">
+        <ul>
+          <li><a href="https://www.snuh.org/login.do">로그인</a></li>
+          <li><a href="https://www.snuh.org/member/joinStep1.do">회원가입</a></li>
+          <li><a href="#">Language</a>
+            <ul class="language-list">
+              <li class="eng"> <a href="http://www.snuh.org/global/en/main.do">English</a></li>
+              <liclass="chn"><a href="http://www.snuh.org/global/en/main.do">中文</a></li>
+              <li class="ru"><a href="http://www.snuh.org/global/en/main.do">Pусский</a></li>
+              <li class="mn"><a href="http://www.snuh.org/global/en/main.do">Монгол хэл</a></li>
+              <li class="ar"><a href="http://www.snuh.org/global/en/main.do">عرب؛ عربيّ</a></li>
+              <li class="language-layer"><button>Close language layer</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      </div>
+  </div>
+
     <hr />
+
     <div class="navi">
-      <nav></nav>
+      <nav>
+        <div class="mian-manu">
+          <h2>주 메뉴</h2>
+          <ul>
+            <li><a href="">진료안내</a></li>
+            <li><a href="">이용안내</a></li>
+            <li><a href="">건강정보</a></li>
+            <li><a href="">고객참여</a></li>
+            <li><a href="">병원소개</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </div>
+
+  <hr />
 
 <!-- 메인 영역 -->
   <div class="main">
-    <div class="img">
-      <img src="" alt="">
+    <div class="main-section1">
+      <div class="img">
+        <img src="styles/link_banner_snuh.jpg" alt="banner">
+      </div>
+      
+      <div>
+        <!-- 진료예약 -->
+        <div class="box1">
+          <h3>진료예약</h3>
+          <p>빠르고 쉽게 진료예약을<br />하실 수 있습니다.</p>
+          <p class="box1-inner"><a href="#">진료예약</a> <a href="#">첫예약상담</a></p>
+        </div>
+        <!-- 진료과/센터 -->
+        <div>
+          <h3>진료과/센터</h3>
+          <p>병원의 진료과 / 센터를<br />상세히 확인할 수 있습니다.</p>
+          <p><a href="#">본원</a> <a href="#">어린이병원</a> <a href="#">암병원</a></p>
+        </div>
+        <!-- 진료안내 -->
+        <div>
+          <h3>진료안내</h3>
+          <p>대표전화 <strong>1588-5700</strong></p>
+          <p>암환자 상담 <strong>02-2072-0707</strong></p>
+          <p><a href="#">외래진료안내</a> <a href="#">진료시간표</a></p>
+        </div>
+        <!-- 로그인창 -->
+        <div>
+          <ul>
+            <li>로그인</li>
+            <li>비회원 로그인</li>
+          </ul>
+          <fieldset>
+            <legend>로그인</legend>
+            <input type="text" name="id" placeholder="아이디/진찰권번호">
+            <input type="password" name="password" placeholder="비밀번호">
+            <br />
+            <a href="#">회원가입</a> <a href="#">아이디/비밀번호 찾기</a><br />
+            <a href="#">로그인</a>
+          </fieldset>
+        </div>
+  
+  
+  
+        <!-- 의료진 찾기 -->
+        <div class="such_dr">
+          <h3>의료진 찾기</h3>
+          <p>서울대학교병원의 의료진은<br />환자를 위해 항상 노력하고 있습니다.</p>
+          <input type="text" name="such_dr" placeholder="의료진/질병명 검색하기"> <button>검색</button>
+  
+          <div class="dr-img">
+            <img src="" alt="dr1">
+            <img src="" alt="dr2">
+            <img src="" alt="dr3">
+            <img src="" alt="dr4">
+            <img src="" alt="dr5">
+          </div>
+        </div>
+        <!-- 병원소식~언론보도 -->
+        <div>
+          <ul>
+            <li><a href="#">병원소식</a></li>
+            <li><a href="#">채용</a></li>
+            <li><a href="#">강좌</a></li>
+            <li><a href="#">입찰</a></li>
+            <li><a href="#">언론보도</a></li>
+          </ul>
+  
+          <div class="병원소식">
+            <h3>병원소식</h3>
+            <ul>
+              <li><a href="#">서울대병원 노사, 2023년 임금 및 단체협약 타결...파업 종료</a></li>
+              <li><a href="#">서울대병원, ‘그룹 미션·비전’ 선포 </a></li>
+              <li><a href="#">서울대병원, 약물알레르기 최신 지견 나누는 연수강좌 개최</a></li>
+              <li><a href="#">희귀질환자와 가족을 위한 온라인 강의 3회차(희귀 암/유전성 암) </a></li>
+            </ul>
+            <a href="#">병원소식 더보기</a>
+          </div>
+  
+          <div class="채용">
+            <h3>채용</h3>
+            <ul>
+              <li><a href="#">채용정보1</a></li>
+              <li><a href="#">채용정보2</a></li>
+              <li><a href="#">채용정보3</a></li>
+              <li><a href="#">채용정보4</a></li>
+            </ul>
+            <a href="#">채용 더보기</a>
+          </div>
+  
+          <div class="강좌">
+            <h3>강좌</h3>
+            <ul>
+              <li><a href="#">강좌1</a></li>
+              <li><a href="#">강좌2</a></li>
+              <li><a href="#">강좌3</a></li>
+              <li><a href="#">강좌4</a></li>
+            </ul>
+            <a href="#">강좌 더보기</a>
+          </div>
+  
+          <div class="입찰">
+            <h3>입찰</h3>
+            <ul>
+              <li><a href="#">입창정보1</a></li>
+              <li><a href="#">입창정보2</a></li>
+              <li><a href="#">입창정보3</a></li>
+              <li><a href="#">입창정보4</a></li>
+            </ul>
+            <a href="#">입찰 더보기</a>
+          </div>
+  
+          <div class="언론보도">
+            <h3>언론보도</h3>
+            <ul>
+              <li><a href="#">언론보도1</a></li>
+              <li><a href="#">언론보도2</a></li>
+              <li><a href="#">언론보도3</a></li>
+              <li><a href="#">언론보도4</a></li>
+            </ul>
+            <a href="#">언론보도 더보기</a>
+          </div>
+        </div>
+  
+        <!-- SNUH 핫이슈 -->
+        <div>
+          <ul>
+            <li><a href="#">Slide1</a></li>
+            <li><a href="#">Slide2</a></li>
+            <li><a href="#">Slide3</a></li>
+            <li><a href="#">Slide4</a></li>
+            <li><a href="#">Slide5</a></li>
+          </ul>
+  
+          <a href="#">
+            <img src="" alt="알쓸수칙">
+            <strong>알아두면 쓸데있는 개인정보보호 수칙</strong>정보보호 생활화를 위해 이용자가 반드시 기억해야 할 '보안 수칙'을 짚어보겠습니다.
+          </a>
+          <br />
+  
+          <a href="#">
+            <img src="" alt="가족사진">
+            <strong>희귀질환센터, "희귀질환자와 가족을 위한 온라인 강의 3회차" 개최</strong>개최 2023년 10월 30일(월) 희귀질환센터에서 희귀암, 유전성 암을 주제로 온라인 ...
+          </a>
+          <br />
+  
+          <a href="#">
+            <img src="" alt="우는수첩">
+            <strong>우리 모두를 위한 작은 실천</strong>아픈 환자를 더 아프게 합니다. 진료예약을 지킬 수 없다면 꼭 취소 또는 연기해주세요! ...
+          </a>
+          <br />
+  
+          <a href="#">
+            <img src="" alt="편지">
+            <strong>진료비 하이패스 서비스란?</strong>환자의 신용카드를 병원에 등록하여, 수납창구 방문 없이 진찰 및 검사 후 일괄 결제하는 빠르고 편리한 진료비 ...
+          </a>
+          <br />
+  
+          <a href="#">
+            <img src="" alt="알쓸수칙">
+            <strong>안내드립니다.</strong>서울대학교병원은 청탁금지법(일명 김영란법)을 적용받는 공공기관으로서, 환자나 환자가족으로부터 제공되는 감사의 ...
+          </a>
+          <br />
+  
+          <button>Auto</button>
+          <button>Stop</button>
+          <button>Prev</button>
+          <button>Next</button>
+        </div>
+  
+        <!-- 위임장/동의서/증명서 -->
+        <div>
+          <h3>위임장 / 동의서 / 증명서</h3>
+          <p>위임장, 동의서 다운로드<br />및 증명서를 발급받으실 수<br />있습니다.</p>
+          <p><a href="#">위임장/동의서</a> <a href="#">증명서발급</a></p>
+        </div>
+  
+        <!-- 고객의 소리 -->
+        <div>
+          <h3>고객의 소리</h3>
+          <p>병원을 이용하시면서<br />감사 또는 건의하고자 하는<br />사항을 등록하실 수 있습니다.</p>
+          <p><a href="#">감사합니다</a> <a href="#">건의합니다</a></p>
+        </div>
+  
+  
+      </div>
+    </div>
+
+    <div class="main-section2">
+      <div>
+        <h3>건강정보</h3>
+        <p>질병, 영양, 운동, 생활 속 관리 등 건강에 대한 모든 것</p>
+      </div>
+
+      <div>
+        <h3><a href="#">건강 TV</a></h3>
+        <p><a href="#">서울대학교병원 의료진에게<br />듣는 팟캐스트 '건강톡톡'</a></p>
+      </div>
+
+      <div>
+        <h3><a href="#">우리 집 주치의</a></h3>
+        <p><a href="#">서울대학교병원 의료진에게<br />깊이 있게 알아봅니다.</a></p>
+      </div>
+
+      <div>
+        <h3><a href="#">공개강좌</a></h3>
+        <p><a href="#">누구에게나 열려있는<br />공개 건강강좌</a></p>
+      </div>
+
+      <div>
+        <h3><a href="#">건강채널</a></h3>
+        <p>더 편하게 만나는 건강정보</p>
+        <a href="#">페이스북</a>
+        <a href="#">포스트</a>
+        <a href="#">네이버 TV</a>
+        <a href="#">블로그</a>
+      </div>
+    </div>
+
+    <div class="section3">
+      <div>
+        <h3>공공부문</h3>
+        <p>공공보건의료 발전을 위해<br />다양한 사업을 수행하고 있습니다.</p>
+        <p><a href="#">공공부문 소개</a> <a href="#">공공부문 사업</a></p>
+      </div>
+
+      <div>
+        <h3>건강증진센터</h3>
+        <p>질병 예방 및 삶의 질 향상을<br />위해 노력합니다.</p>
+        <p><a href="#">본원</a> <a href="#">강남센터</a></p>
+      </div>
+
+      <div>
+        <h3>발전후원회</h3>
+        <p>따뜻한 마음을 의료 발전으로<br />보답 하겠습니다.</p>
+        <p><a href="#">발전후원회</a> <a href="#">어린이병원후원</a></p>
+      </div>
+
+      <div>
+        <h3>진료협력센터</h3>
+        <p>네트워크로 하나되는 의료<br />SNUH 진료협력시스템</p>
+        <p><a href="#">진료의뢰</a> <a href="#">협력병원</a></p>
+      </div>
+
+      <div class="section4">
+        <div>
+          <h3>오시는길</h3>
+          <p>서울대학교병원으로 오시는 길을 알려드립니다.</p>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="#">오시는길</a></li>
+            <li><a href="#">원내위치도</a></li>
+            <li><a href="#">진료과/검사실</a></li>
+            <li><a href="#">주변편의시설</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p>주소</p>
+          <p>서울특별시 종로구 대학로 101(연건동 28)<br />서울대학교병원</p>
+          <a href="#">지도로 보기</a> <a href="#">지도로 보기</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <footer></footer>
+  <hr />
+
+  <!-- footer영역 -->
+  <footer>
+    <div class="footer-1">
+      <ul>
+        <li><a href="#">어린이병원</a></li>
+        <li><a href="#">암병원</a></li>
+        <li><a href="#">분당서울대병원</a></li>
+        <li><a href="#">보라매병원</a></li>
+        <li><a href="#">강남센터</a></li>
+        <li><a href="#">서울대학교의과대학</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-2">
+
+    </div>
+
+    <div class="footer-3">
+      <ul>
+        <li><a href="#">비급여진료비용</a></li>
+        <li><a href="#">환자권리장전</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">정보공개</a></li>
+        <li><a href="#">정보무단수집거부공개</a></li>
+        <li><a href="#">뷰어 다운로드</a></li>
+        <li><a href="#">진료협력센터</a></li>
+        <li><a href="#">장례식장</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-4">
+      <p>주소 : 03080 서울특별시 종로구 대학로 101(연건동 28)</p>
+      <p>대표전화 : 1588-5700</p>
+      <p><a href="#">홈페이지 의견접수</a></p>
+      <p>COPYRIGHT 2023 SEOUL NATIONAL UNIVERSITY HOSPITAL. ALL RIGHTS RESERVED</p>
+    </div>
+  </footer>
 </body>
 </html>
