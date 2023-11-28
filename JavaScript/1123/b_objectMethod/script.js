@@ -28,48 +28,27 @@
 //   }
 
 
-// JSON 형태로 여러 자료형을 나타내는 방법
-// ! 아래 데이터 붙여넣을것.
+// json형태로 여러 자료형을 나타내는 방법
 let data = [
   {
     name: '이승아',
     age: 27,
     job: 'developer',
     hobby: {
-      first:'climbing',
+      first: 'climbing',
       second: 'music'
     },
-    lecture: ['프론트엔드', '자바', 'DBMS' ]
+    lecture: ['프론트엔드', '자바', 'DBMS']
   },
   {
     name: '이준국',
     age: 29,
-    job: 'devsdper',
+    job: 'doctor',
     hobby: {
-      first:'cfsbing',
-      second: 'msfc'
+      first: 'health',
+      second: 'reading'
     },
-    lecture: ['프d엔드', 'd바', 'DdBMS' ]
-  },
-  {
-    name: '이승아',
-    age: 27,
-    job: 'developer',
-    hobby: {
-      first:'climbing',
-      second: 'music'
-    },
-    lecture: ['프론트엔드', '자바', 'DBMS' ]
-  },
-  {
-    name: '이승아',
-    age: 27,
-    job: 'developer',
-    hobby: {
-      first:'climbing',
-      second: 'music'
-    },
-    lecture: ['프론트엔드', '자바', 'DBMS' ]
+    lecture: ['백엔드', '파이썬', 'Kotlin']
   }
 ];
 
